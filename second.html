@@ -1,0 +1,1017 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Game</title>
+    <link rel="stylesheet" href="styleSecond.css">
+</head>
+<body style="background-image: url('Pictures//texture2.png');background-size: 100vw;">
+    <div class="modal" id="modal" onclick="this.style.display = 'none';">
+        <img class="modal-content" id="mImage">
+    </div>
+
+    <div class="all-container">
+        <div class="top-container">
+            <div class="logo-container">
+                <img src="Pictures//logo2.png" alt="" />
+            </div>
+            <div class="welcome-container">
+                <label class="welcome" id="welcome">
+                    Host, your turn
+                </label>
+            </div>
+            <div class="timer-container">
+                <ul style="list-style-type:none">
+                    <li>
+                        <label class="global-timer" id="global">
+                            00:00
+                        </label>
+                    </li>
+                    <li>
+                        <label class="local-timer" id="local">
+                            00:00
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="middle-container">
+            <div class="center-container">
+                <div class="test-container">
+                    <div class="flip-container">
+                        <div class="flipper" onclick="modal(this);toggle(this);">
+                            <div class="front">
+                                <img src="Pictures//back.png" alt="">
+                            </div>
+
+                            <div class="back">
+                                <img src="Pictures//back.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <label class="card-label"
+                           onclick="modal(this.parentNode.querySelector('.flipper'));
+                            toggle(this.parentNode.querySelector('.flipper'));">
+                        Test
+                    </label>
+                </div>
+
+                <div class="left-arrow">
+                    <i class="arrow left" onclick="toEntireLeft();" onmouseover="toLeft();" onmouseout="stop();"></i>
+                </div>
+                <div class="right-arrow">
+                    <i class="arrow right" onclick="toEntireRight();" onmouseover="toRight();" onmouseout="stop();"></i>
+                </div>
+                <div class="cards-container" id="cards">
+                    <div class="cards-scroll" id="scroll">
+                        <div class="flip-container">
+                            <div class="flipper" onclick="modal(this);toggle(this);">
+                                <div class="front">
+                                    <img src="Pictures//back.png" alt="">
+                                </div>
+
+                                <div class="back">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-container">
+                            <div class="flipper" onclick="modal(this);toggle(this);">
+
+                                <div class="front">
+                                    <img src="Pictures//back.png" alt="">
+                                </div>
+
+                                <div class="back">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-container">
+                            <div class="flipper" onclick="modal(this);toggle(this);">
+
+                                <div class="front">
+                                    <img src="Pictures//back.png" alt="">
+                                </div>
+
+                                <div class="back">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-container">
+                            <div class="flipper" onclick="modal(this);toggle(this);">
+
+                                <div class="front">
+                                    <img src="Pictures//back.png" alt="">
+                                </div>
+
+                                <div class="back">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-container">
+                            <div class="flipper" onclick="modal(this);toggle(this);">
+
+                                <div class="front">
+                                    <img src="Pictures//back.png" alt="">
+                                </div>
+
+                                <div class="back">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-container">
+                            <div class="flipper" onclick="modal(this);toggle(this);">
+
+                                <div class="front">
+                                    <img src="Pictures//back.png" alt="">
+                                </div>
+
+                                <div class="back">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-container">
+                            <div class="flipper" onclick="modal(this);toggle(this);">
+
+                                <div class="front">
+                                    <img src="Pictures//back.png" alt="">
+                                </div>
+
+                                <div class="back">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-container">
+                            <div class="flipper" onclick="modal(this);toggle(this);">
+
+                                <div class="front">
+                                    <img src="Pictures//back.png" alt="">
+                                </div>
+
+                                <div class="back">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-container">
+                            <div class="flipper" onclick="modal(this);toggle(this);">
+
+                                <div class="front">
+                                    <img src="Pictures//back.png" alt="">
+                                </div>
+
+                                <div class="back">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-container">
+                            <div class="flipper" onclick="modal(this);toggle(this);">
+
+                                <div class="front">
+                                    <img src="Pictures//back.png" alt="">
+                                </div>
+
+                                <div class="back">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-container">
+                            <div class="flipper" onclick="modal(this);toggle(this);">
+                                <div class="front">
+                                    <img src="Pictures//back.png" alt="">
+                                </div>
+
+                                <div class="back">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-container">
+                            <div class="flipper" onclick="modal(this);toggle(this);">
+
+                                <div class="front">
+                                    <img src="Pictures//back.png" alt="">
+                                </div>
+
+                                <div class="back">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-container">
+                            <div class="flipper" onclick="modal(this);toggle(this);">
+
+                                <div class="front">
+                                    <img src="Pictures//back.png" alt="">
+                                </div>
+
+                                <div class="back">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-container">
+                            <div class="flipper" onclick="modal(this);toggle(this);">
+
+                                <div class="front">
+                                    <img src="Pictures//back.png" alt="">
+                                </div>
+
+                                <div class="back">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-container">
+                            <div class="flipper" onclick="modal(this);toggle(this);">
+
+                                <div class="front">
+                                    <img src="Pictures//back.png" alt="">
+                                </div>
+
+                                <div class="back">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-container">
+                            <div class="flipper" onclick="modal(this);toggle(this);">
+
+                                <div class="front">
+                                    <img src="Pictures//back.png" alt="">
+                                </div>
+
+                                <div class="back">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-container">
+                            <div class="flipper" onclick="modal(this);toggle(this);">
+
+                                <div class="front">
+                                    <img src="Pictures//back.png" alt="">
+                                </div>
+
+                                <div class="back">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-container">
+                            <div class="flipper" onclick="modal(this);toggle(this);">
+
+                                <div class="front">
+                                    <img src="Pictures//back.png" alt="">
+                                </div>
+
+                                <div class="back">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-container">
+                            <div class="flipper" onclick="modal(this);toggle(this);">
+
+                                <div class="front">
+                                    <img src="Pictures//back.png" alt="">
+                                </div>
+
+                                <div class="back">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-container">
+                            <div class="flipper" onclick="modal(this);toggle(this);">
+
+                                <div class="front">
+                                    <img src="Pictures//back.png" alt="">
+                                </div>
+
+                                <div class="back">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-container">
+                            <div class="flipper" onclick="modal(this);toggle(this);">
+                                <div class="front">
+                                    <img src="Pictures//back.png" alt="">
+                                </div>
+
+                                <div class="back">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-container">
+                            <div class="flipper" onclick="modal(this);toggle(this);">
+
+                                <div class="front">
+                                    <img src="Pictures//back.png" alt="">
+                                </div>
+
+                                <div class="back">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-container">
+                            <div class="flipper" onclick="modal(this);toggle(this);">
+
+                                <div class="front">
+                                    <img src="Pictures//back.png" alt="">
+                                </div>
+
+                                <div class="back">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-container">
+                            <div class="flipper" onclick="modal(this);toggle(this);">
+
+                                <div class="front">
+                                    <img src="Pictures//back.png" alt="">
+                                </div>
+
+                                <div class="back">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-container">
+                            <div class="flipper" onclick="modal(this);toggle(this);">
+
+                                <div class="front">
+                                    <img src="Pictures//back.png" alt="">
+                                </div>
+
+                                <div class="back">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-container">
+                            <div class="flipper" onclick="modal(this);toggle(this);">
+
+                                <div class="front">
+                                    <img src="Pictures//back.png" alt="">
+                                </div>
+
+                                <div class="back">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-container">
+                            <div class="flipper" onclick="modal(this);toggle(this);">
+
+                                <div class="front">
+                                    <img src="Pictures//back.png" alt="">
+                                </div>
+
+                                <div class="back">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-container">
+                            <div class="flipper" onclick="modal(this);toggle(this);">
+
+                                <div class="front">
+                                    <img src="Pictures//back.png" alt="">
+                                </div>
+
+                                <div class="back">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-container">
+                            <div class="flipper" onclick="modal(this);toggle(this);">
+
+                                <div class="front">
+                                    <img src="Pictures//back.png" alt="">
+                                </div>
+
+                                <div class="back">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-container">
+                            <div class="flipper" onclick="modal(this);toggle(this);">
+
+                                <div class="front">
+                                    <img src="Pictures//back.png" alt="">
+                                </div>
+
+                                <div class="back">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-container">
+                            <div class="flipper" onclick="modal(this);toggle(this);">
+                                <div class="front">
+                                    <img src="Pictures//back.png" alt="">
+                                </div>
+
+                                <div class="back">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-container">
+                            <div class="flipper" onclick="modal(this);toggle(this);">
+
+                                <div class="front">
+                                    <img src="Pictures//back.png" alt="">
+                                </div>
+
+                                <div class="back">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-container">
+                            <div class="flipper" onclick="modal(this);toggle(this);">
+
+                                <div class="front">
+                                    <img src="Pictures//back.png" alt="">
+                                </div>
+
+                                <div class="back">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-container">
+                            <div class="flipper" onclick="modal(this);toggle(this);">
+
+                                <div class="front">
+                                    <img src="Pictures//back.png" alt="">
+                                </div>
+
+                                <div class="back">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-container">
+                            <div class="flipper" onclick="modal(this);toggle(this);">
+
+                                <div class="front">
+                                    <img src="Pictures//back.png" alt="">
+                                </div>
+
+                                <div class="back">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-container">
+                            <div class="flipper" onclick="modal(this);toggle(this);">
+
+                                <div class="front">
+                                    <img src="Pictures//back.png" alt="">
+                                </div>
+
+                                <div class="back">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-container">
+                            <div class="flipper" onclick="modal(this);toggle(this);">
+
+                                <div class="front">
+                                    <img src="Pictures//back.png" alt="">
+                                </div>
+
+                                <div class="back">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-container">
+                            <div class="flipper" onclick="modal(this);toggle(this);">
+
+                                <div class="front">
+                                    <img src="Pictures//back.png" alt="">
+                                </div>
+
+                                <div class="back">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-container">
+                            <div class="flipper" onclick="modal(this);toggle(this);">
+
+                                <div class="front">
+                                    <img src="Pictures//back.png" alt="">
+                                </div>
+
+                                <div class="back">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-container">
+                            <div class="flipper" onclick="modal(this);toggle(this);">
+
+                                <div class="front">
+                                    <img src="Pictures//back.png" alt="">
+                                </div>
+
+                                <div class="back">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-container">
+                            <div class="flipper" onclick="modal(this);toggle(this);">
+                                <div class="front">
+                                    <img src="Pictures//back.png" alt="">
+                                </div>
+
+                                <div class="back">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-container">
+                            <div class="flipper" onclick="modal(this);toggle(this);">
+
+                                <div class="front">
+                                    <img src="Pictures//back.png" alt="">
+                                </div>
+
+                                <div class="back">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-container">
+                            <div class="flipper" onclick="modal(this);toggle(this);">
+
+                                <div class="front">
+                                    <img src="Pictures//back.png" alt="">
+                                </div>
+
+                                <div class="back">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-container">
+                            <div class="flipper" onclick="modal(this);toggle(this);">
+
+                                <div class="front">
+                                    <img src="Pictures//back.png" alt="">
+                                </div>
+
+                                <div class="back">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-container">
+                            <div class="flipper" onclick="modal(this);toggle(this);">
+
+                                <div class="front">
+                                    <img src="Pictures//back.png" alt="">
+                                </div>
+
+                                <div class="back">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-container">
+                            <div class="flipper" onclick="modal(this);toggle(this);">
+
+                                <div class="front">
+                                    <img src="Pictures//back.png" alt="">
+                                </div>
+
+                                <div class="back">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-container">
+                            <div class="flipper" onclick="modal(this);toggle(this);">
+
+                                <div class="front">
+                                    <img src="Pictures//back.png" alt="">
+                                </div>
+
+                                <div class="back">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-container">
+                            <div class="flipper" onclick="modal(this);toggle(this);">
+
+                                <div class="front">
+                                    <img src="Pictures//back.png" alt="">
+                                </div>
+
+                                <div class="back">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-container">
+                            <div class="flipper" onclick="modal(this);toggle(this);">
+
+                                <div class="front">
+                                    <img src="Pictures//back.png" alt="">
+                                </div>
+
+                                <div class="back">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-container">
+                            <div class="flipper" onclick="modal(this);toggle(this);">
+
+                                <div class="front">
+                                    <img src="Pictures//back.png" alt="">
+                                </div>
+
+                                <div class="back">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-container">
+                            <div class="flipper" onclick="modal(this);toggle(this);">
+                                <div class="front">
+                                    <img src="Pictures//back.png" alt="">
+                                </div>
+
+                                <div class="back">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-container">
+                            <div class="flipper" onclick="modal(this);toggle(this);">
+
+                                <div class="front">
+                                    <img src="Pictures//back.png" alt="">
+                                </div>
+
+                                <div class="back">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-container">
+                            <div class="flipper" onclick="modal(this);toggle(this);">
+
+                                <div class="front">
+                                    <img src="Pictures//back.png" alt="">
+                                </div>
+
+                                <div class="back">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-container">
+                            <div class="flipper" onclick="modal(this);toggle(this);">
+
+                                <div class="front">
+                                    <img src="Pictures//back.png" alt="">
+                                </div>
+
+                                <div class="back">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-container">
+                            <div class="flipper" onclick="modal(this);toggle(this);">
+
+                                <div class="front">
+                                    <img src="Pictures//back.png" alt="">
+                                </div>
+
+                                <div class="back">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-container">
+                            <div class="flipper" onclick="modal(this);toggle(this);">
+
+                                <div class="front">
+                                    <img src="Pictures//back.png" alt="">
+                                </div>
+
+                                <div class="back">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-container">
+                            <div class="flipper" onclick="modal(this);toggle(this);">
+
+                                <div class="front">
+                                    <img src="Pictures//back.png" alt="">
+                                </div>
+
+                                <div class="back">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-container">
+                            <div class="flipper" onclick="modal(this);toggle(this);">
+
+                                <div class="front">
+                                    <img src="Pictures//back.png" alt="">
+                                </div>
+
+                                <div class="back">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-container">
+                            <div class="flipper" onclick="modal(this);toggle(this);">
+
+                                <div class="front">
+                                    <img src="Pictures//back.png" alt="">
+                                </div>
+
+                                <div class="back">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flip-container">
+                            <div class="flipper" onclick="modal(this);toggle(this);">
+
+                                <div class="front">
+                                    <img src="Pictures//back.png" alt="">
+                                </div>
+
+                                <div class="back">
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-container">
+            <label class="rights">
+                Test text
+            </label>
+            <label class="author">
+                Test Text
+            </label>
+        </div>
+    </div>
+    <audio id="sound" src="gong.mp3" />
+    <script>
+        function toggle(item) {
+            if (item.classList == "flipper") {
+                item.classList.toggle('changed', 'blocked');
+            }
+        }
+        var flag = 0;
+        var timerOne, timerTwo;
+        function startTimer(duration, display) {
+            var timer = duration, minutes, seconds;
+            timerOne = setInterval(function () {
+                minutes = parseInt(timer / 60, 10);
+                seconds = parseInt(timer % 60, 10);
+
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                display.textContent = minutes + ":" + seconds;
+
+                if (--timer < 0) {
+                    if (flag == 0) {
+                        timer = 60 * 10;
+                        document.querySelector('#sound').play();
+                        flag = 1;
+                    } else if (flag == 1) {
+                        timer = 60 * 30;
+                        document.querySelector('#sound').play();
+                        var displayTwo = document.querySelector('#local');
+                        var timerTwo = 60 * 2;
+                        startTimerTwo(timerTwo, displayTwo);
+                        flag = 2;
+                    } else {
+                        document.querySelector('#sound').play();
+                        clearInterval(timerOne);
+                        clearInterval(timerTwo);
+                    }
+                }
+            }, 1000);
+        }
+
+        function startTimerTwo(duration, display) {
+            var timer = duration, minutes, seconds;
+            timerTwo = setInterval(function () {
+                minutes = parseInt(timer / 60, 10);
+                seconds = parseInt(timer % 60, 10);
+
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                display.textContent = minutes + ":" + seconds;
+
+                if (--timer < 0) {
+                    timer = duration;
+                    document.querySelector('#sound').play();
+                }
+            }, 1000);
+        }
+
+        var data;
+        window.onload = function () {
+            data = JSON.parse(localStorage.getItem("playersNames"));
+            fillCards(60);
+            var time = 60 * 60;
+            var display = document.querySelector('#global');
+            startTimer(time, display);
+        };
+        var timerLeft, timerRight;
+
+        function toEntireLeft() {
+            var div = document.querySelector('#scroll');
+            div.scrollLeft = 0;
+        }
+
+        function toEntireRight() {
+            var div = document.querySelector('#scroll');
+            div.scrollLeft = div.scrollWidth;
+        }
+
+        function toLeft() {
+            timerLeft = setInterval(function () {
+                var div = document.querySelector('#scroll');
+                div.scrollLeft -= div.scrollWidth / 2000 * 1;
+            }, 10);
+        }
+
+        function toRight() {
+            timerRight = setInterval(function () {
+                var div = document.querySelector('#scroll');
+                div.scrollLeft += div.scrollWidth / 2000 * 1;
+            }, 10);
+        }
+
+        function stop() {
+            clearInterval(timerLeft);
+            clearInterval(timerRight);
+        }
+
+        var playerNumber = 0;
+
+        function modal(item) {
+            if (item.classList == "flipper changed") {
+                var modal = document.querySelector('#modal');
+                var itemImg = item.querySelector('.back').querySelector("img");
+                var modalImg = document.querySelector('#mImage');
+                modal.style.display = "flex";
+                modalImg.src = itemImg.src;
+                modalImg.alt = itemImg.alt;
+            } else {
+                setTimeout(function () {
+                    var modal = document.querySelector('#modal');
+                    var itemImg = item.querySelector('.back').querySelector("img");
+                    var modalImg = document.querySelector('#mImage');
+                    modal.style.display = "flex";
+                    modalImg.src = itemImg.src;
+                    modalImg.alt = itemImg.alt;
+
+                    var labelWelcome = document.querySelector('#welcome');
+                    labelWelcome.textContent = `${data[playerNumber % data.length]}, your turn`;
+                    playerNumber++;
+                }, 1000);
+            }
+        }
+
+        function fillCards(count) {
+            var cards = document.querySelector('#cards');
+            var contArray = cards.getElementsByClassName("flip-container");
+            var array = cards.getElementsByClassName("back");
+            var numArray = new Array(count);
+            for (var i = 0; i < count; i++) {
+                numArray[i] = i;
+                var number = document.createElement('label');
+                number.className = "card-label";
+                number.textContent = i + 1;
+                number.setAttribute('onclick', "modal(this.parentNode.querySelector('.flipper'));toggle(this.parentNode.querySelector('.flipper'));");
+                contArray[i].appendChild(number);
+            }
+            var shuffled = shuffle(numArray);
+
+            for (var i = 0; i < count; i++) {
+                var img = document.createElement('img');
+                img.src = `Pictures//${shuffled[i] + 1}.png`;
+                img.alt = "";
+                array[i].appendChild(img);
+            }
+        }
+
+
+        function shuffle(arr) {
+            var j, temp;
+            for (var i = arr.length - 1; i > 0; i--) {
+                j = Math.floor(Math.random() * (i + 1));
+                temp = arr[j];
+                arr[j] = arr[i];
+                arr[i] = temp;
+            }
+            return arr;
+        }
+    </script>
+</body>
+
+</html>

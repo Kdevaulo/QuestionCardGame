@@ -1,0 +1,137 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #333;
+}
+
+.all-container {
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translate(0,-50%);
+}
+
+.logo-container {
+    width: 40%;
+    height: 60%;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0,-50%);
+    text-align: center;
+}
+
+    .logo-container img {
+        height: 100%;
+    }
+
+.organization-container {
+    width: 40%;
+    height: 60%;
+    min-width: 150px;
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(0,-50%);
+    text-align: center;
+}
+
+.label-container {
+    height: 15%;
+    display: flex;
+}
+
+.label {
+    margin: auto;
+    font-weight: bold;
+    font-size: 1.9vw;
+    color: white;
+}
+
+.players-container {
+    border: 3px solid;
+    border-radius: 30px;
+    border-color: white;
+    background-color:white;
+    height: 60%;
+    margin: -3px 0px -3px 0px;
+    display:flex;
+}
+
+.players {
+    width:90%;
+    height:90%;
+    overflow: auto;
+    margin:auto;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #333;
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #333;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    border:solid 2px white;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+.players-list {
+    list-style-type: none;
+}
+
+.player {
+    padding-left: 10px;
+    font-weight: bold;
+    color: #878787;
+    background-color: #282828;
+    width: 80%;
+    margin-bottom: 1vw;
+    border: 2px solid white;
+    border-radius: 20px;
+    font-size: 1.9vw;
+    outline: none;
+}
+
+.button-container {
+    height: 25%;
+    position: relative;
+    width: 100%;
+}
+
+.button {
+    cursor: pointer;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    height: 50%;
+    width: 100%;
+    min-block-size: 1.9vw;
+    border-radius: 30px;
+    background-color: #d3745f;
+}
+
+    .button:hover {
+        background-color: #935142;
+    }
+
+.start-label {
+    cursor: pointer;
+    margin: auto;
+    font-weight: bold;
+    font-size: 1.9vw;
+    color: white;
+}
